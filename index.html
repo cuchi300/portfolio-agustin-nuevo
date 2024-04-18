@@ -5,10 +5,6 @@
     <meta name="description" content="Portfolio Miguel Agustin Baiud">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Miguel Agustin Baiud</title>
-    <!-- Prefetch -->
-    <!-- cargar la siguiente pagina que el usuario visite mas rapido -->
-    <!-- con google analytics podemos saber en que pagina las personas pasan mas tiempo y asi colocar prefetch a esa pagina asi carga mas rapido, para sitios web que tengan mas de dos paginas -->
-    <link rel="prefetch" href="ingles.html" as="document">
     <!-- Preload que hoja de estilo carga con mayor prioridad -->
     <!-- Bootstrap icons -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" as="style">
@@ -18,13 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="preload" href="build/img/yo.jpg" as="image">
-    <link rel="preload" href="build/img/guitar-la.png" as="image">
-    <link rel="preload" href="build/img/cafe-pagina.png" as="image">
-    <link rel="preload" href="build/img/muni-web-desktop.png" as="image">
-    <link rel="preload" href="build/img/pagina-sube-desktop.png" as="image">
-    <link rel="preload" href="build/img/techpro-img.png" as="image">
-
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="preload" href="build/css/app.min.css" as="style">
     <link rel="stylesheet" href="build/css/app.min.css">
@@ -70,18 +61,18 @@
         <div class="container-xl">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 text-white hero__contenido">
-                    <h2 class="fw-bold mb-5 hero__heading">Soy Miguel Agustin Baiud</h2>
+                    <h2 class="fw-bold mb-5 hero__heading" data-aos="fade-down">Soy Miguel Agustin Baiud</h2>
                     <h1 class="mb-3 text-secondary hero__parrafo">Desarrollador Web Front End</h1>
                     <span class="fs-3 pb-3 text-primary fw-bold" id="typed"></span>
                     <p class="fs-4 pb-3">
                         <i class="fs-3 bi bi-geo-alt"></i>
                         <i class="fs-5">Jujuy, Argentina</i>
                     </p>
-                    <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="hero__btn btn">Contratame</a>
+                    <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="hero__btn btn" data-aos="flip-up" data-aos-delay="800">Contratame</a>
                 </div>
                 <div class="col-12 col-md-6 hero__picture">
                     <div class="hero__imagen rounded-circle">
-                        <img class="mx-auto" loading="lazy" width="400" height="300" src="build/img/yo.jpg" alt="imagen mia">
+                        <img data-aos="flip-right" data-aos-delay="1700" class="mx-auto" loading="lazy" width="400" height="300" src="build/img/yo.jpg" alt="imagen mia">
                     </div>
                     <svg class="hero__svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#feb633" d="M33.1,-54.2C43.1,-51.6,51.5,-43.1,61.9,-33.1C72.2,-23.1,84.4,-11.5,83.5,-0.5C82.6,10.5,68.6,21,56.6,28.1C44.6,35.2,34.6,38.9,25.5,46C16.4,53,8.2,63.5,-2,66.9C-12.1,70.3,-24.3,66.7,-28.3,56.7C-32.4,46.7,-28.4,30.4,-25.3,19.9C-22.2,9.4,-20.1,4.7,-20.4,-0.2C-20.7,-5.1,-23.5,-10.1,-28.4,-23.9C-33.4,-37.6,-40.5,-60,-36.1,-65.8C-31.7,-71.7,-15.9,-60.8,-2.2,-57.1C11.6,-53.4,23.1,-56.7,33.1,-54.2Z" transform="translate(100 100)" />
@@ -94,7 +85,7 @@
     <section class="about py-5 px-5 my-5" id="about">
         <div class="container-xl">
             <div class="row text-white py-5 my-5">
-                <h2 class="about__heading z-3 pt-5 mb-5 mx-auto">Acerca de Mi</h2>
+                <h2 class="about__heading z-3 pt-5 mb-5 mx-auto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Acerca de Mi</h2>
                 
                 <div class="about__texto text-center col-12 pt-5 mt-5 about__box">
                     <p class="mb-5 fs-5">Tengo 32 años de edad, <i class="text-primary">descubri el Desarrollo web en 2019</i>, una tarde de trabajo cuando miraba videos en internet. La curiosidad sobre esta profesion desperto al ver un video donde <i class="text-primary">creaban una pagina con puro codigo</i> de computadora. Fue asi que empeze a investigar y encontre <i class="text-primary">cursos de Desarrollo Front End</i>, que por si no tenes conocimiento de lo que significa, se especializa en la parte visual de un sitio web. Lo que estas viendo en este momento.</p>
@@ -102,15 +93,15 @@
                     <p class="mb-5 fs-5">Llegue a la instancia de decir que estoy preparado para poder ofrecerte mi conocimientos y poder implementarlos todos para ayudarte a crear un sitio web que se adapte a tus necesidades de negocio y que puedas lograr tu objetivo comercial.</p>
                     <p class="mb-5 fs-5">Espero con ansias que podamos trabajar juntos.</p>
                     <div class="d-flex flex-column justify-content-center flex-md-row gap-3 pt-5">
-                        <a href="#proyectos" class="about__btn btn py-3 px-5">Mis Trabajos</a>
-                        <a href="file/CV-Miguel-Agustin-Baiud.pdf" class="about__btn btn py-3 px-5 about__btn--edit" download="CV-Agustin-Baiud">Download CV</a>
+                        <a href="#proyectos" class="about__btn btn py-3 px-5" >Mis Trabajos</a>
+                        <a href="file/CV-Miguel-Agustin-Baiud.pdf" class="about__btn btn py-3 px-5 about__btn--edit" download="CV-Agustin-Baiud" >Download CV</a>
                     </div>
                 </div>
             </div> <!-- row -->
 
             <div class="about__skill text-center py-5 my-5 px-5">
                 <div class="row justify-content-center">
-                    <h2 class="about__heading">Mis Habilidades</h2>
+                    <h2 class="about__heading" data-aos="fade-left">Mis Habilidades</h2>
                     <div class="about__grid">
                         <div class="about__icon">
                             <picture>
@@ -172,7 +163,7 @@
         <div class="container-fluid servicios__container">
             <div class="row py-5 text-center">
                 <div class="col-12">
-                    <h2 class="servicios__heading">Mis servicios</h2>
+                    <h2 class="servicios__heading" data-aos="fade-right">Mis servicios</h2>
                     <p class="py-5 w-75 mx-auto fs-5">Alguno de los servicios que te voy a ofrecer para que tengas la seguridad de que tu pagina va a estar en buenas manos.</p>
                 </div>
                 <div class="row text-white mx-auto justify-content-center servicios__row text-start">
@@ -203,10 +194,10 @@
 
     <main class="proyectos py-5" id="proyectos">
         <div class="container-xl text-center">
-            <h2 class="proyectos__heading mb-5">Mis Proyectos</h2>
+            <h2 class="proyectos__heading mb-5" data-aos="fade-up">Mis Proyectos</h2>
             <p class="pb-5 fs-5">Alguno de los proyectos en los que practico varias de las tecnologias de las que voy adquiriendo conocimiento.</p>
             <div class="row py-5 my-5s justify-content-center mx-auto g-5">
-                <section class="col-12 col-md-5 col-lg-4">
+                <section class="col-12 col-md-5 col-lg-4" data-aos="fade-up">
                     <div class="card text-start text-white">
                         <picture>
                             <source srcset="build/img/pagina-sube-desktop.webp" type="image/webp">
@@ -220,7 +211,7 @@
                         </div>
                     </div> <!-- card -->
                 </section>
-                <section class="col-12 col-md-5 col-lg-4">
+                <section class="col-12 col-md-5 col-lg-4" data-aos="fade-up">
                     <div class="card text-start text-white">
                         <picture>
                             <source srcset="build/img/cooking-school.webp" type="image/webp">
@@ -234,7 +225,7 @@
                         </div>
                     </div> <!-- card -->
                 </section>
-                <section class="col-12 col-md-5 col-lg-4">
+                <section class="col-12 col-md-5 col-lg-4" data-aos="fade-up">
                     <div class="card text-start text-white">
                         <picture>
                             <source srcset="build/img/gymfitness-imagen.webp" type="image/webp">
@@ -247,7 +238,7 @@
                         </div>
                     </div> <!-- card -->
                 </section>
-                <section class="col-12 col-md-5 col-lg-4">
+                <section class="col-12 col-md-5 col-lg-4" data-aos="fade-up">
                     <div class="card text-start text-white">
                         <picture>
                             <source srcset="build/img/cafe-pagina.webp" type="image/webp">
@@ -261,7 +252,7 @@
                         </div>
                     </div> <!-- card -->
                 </section>
-                <section class="col-12 col-md-5 col-lg-4">
+                <section class="col-12 col-md-5 col-lg-4" data-aos="fade-up">
                     <div class="card text-start text-white">
                         <picture>
                             <source srcset="build/img/techpro-img.webp" type="image/webp">
@@ -275,7 +266,7 @@
                         </div>
                     </div> <!-- card -->
                 </section>
-                <section class="col-12 col-md-5 col-lg-4">
+                <section class="col-12 col-md-5 col-lg-4" data-aos="fade-up">
                     <div class="card text-start text-white">
                         <picture>
                             <source srcset="build/img/guitar-la.webp" type="image/webp">
@@ -295,8 +286,8 @@
 
     <section class="algo py-5 my-5" id="algo">
         <div class="container-xl text-center">
-            <h2 class="fs-2 fw-bolder algo__heading">Algun Proyecto en mente?</h2>
-            <div class="row pb-5">
+            <h2 class="fs-2 fw-bolder algo__heading" data-aos="fade-down">Algun Proyecto en mente?</h2>
+            <div class="row pb-5" data-aos="zoom-in" data-aos-delay="700">
                     <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="algo__btn btn d-flex align-items-center gap-3 mx-auto d-inline-block w-auto py-2 px-5 mt-5 fs-6 text-uppercase">
                         <i class="fs-4 bi bi-whatsapp"></i>
                         <span>Contactame</span>
@@ -308,8 +299,8 @@
     <section class="contacto pt-5 mb-5 px-5" id="contacto">
         <div class="container-xl text-center">
             <h2 class="contacto__heading mb-5">Contacto</h2>
-            <div class="row text-white text-start">
-                <div class="col-12 col-md-4 my-5 my-md-0">
+            <div class="row text-white text-start pt-5">
+                <div class="col-12 col-md-4 my-5 my-md-0" data-aos="fade-right">
                     <h3 class="fs-5 mb-3 text-primary">Info</h3>
                     <div class="pb-5">
                         <address class="mb-4 fs-6 fw-normal text-secondary">
@@ -367,7 +358,7 @@
                         </div>
                         <div class="col-12" id="botones">
 
-                            <button aria-label="Button submit" type="submit" class="btn formulario__btn opacity-25 py-3 mb-3" disabled>
+                            <button aria-label="Button submit" type="submit" class="btn formulario__btn opacity-25 py-3 mb-3 mb-md-0" disabled>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                                 </svg>
@@ -417,9 +408,17 @@
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/app.js"></script>
     <script src="js/efectos.js"></script>
     <script src="js/scroll.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+      </script>
 </body>
 </html>

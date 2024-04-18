@@ -1,0 +1,11 @@
+@use '../customs' as *;
+@use 'base/mixins' as m;
+
+.algo{
+    &__heading{
+        @include m.heading;
+    }
+    &__btn{
+        @include m.btnOutline;
+    }
+}

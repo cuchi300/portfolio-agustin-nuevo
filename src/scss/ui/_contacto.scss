@@ -1,0 +1,26 @@
+@use '../customs' as *;
+@use 'base/mixins' as m;
+
+.contacto{
+
+    &__heading{
+        @include m.heading;
+    }
+    &__link{
+        transition: color .3s;
+        &:hover{
+            color: $primary;
+        }
+    }
+    
+}
+
+.formulario{
+    &__btn{
+        @include m.btnOutline;
+
+        svg{
+            width: 2rem;
+        }
+    }
+}

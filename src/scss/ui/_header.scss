@@ -1,0 +1,54 @@
+@use '../customs' as *;
+
+.header{
+    position: relative;
+    z-index: 100;
+    
+    &__dark{
+        background-color: $oscuro;
+    }
+}
+
+.navegacion{
+    &__heading{
+        font-size: 3rem;
+        @include media-breakpoint-up(md){
+            font-size: 3.5rem;
+        }
+    }
+    &__list{
+        a{
+            color: $white;
+            display: inline-block;
+            position: relative;
+            font-size: 1.8rem;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $primary;
+                height: 2px;
+                width: 0;
+                transition: all .3s;
+            }
+            &:hover{
+                color: $white;
+                &::after{
+                    width: 3rem;
+                }
+            }
+            &:focus{
+                color: $primary;
+                &::after{
+                    width: 3rem;
+                }
+            }
+        }
+    }
+    &__nav-negro{
+        background-color: $negro;
+
+        transition: background-color .7s;
+    }
+}

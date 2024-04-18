@@ -1,0 +1,114 @@
+@use '../customs' as *;
+@use 'base/mixins' as m;
+
+.servicios{
+    &__row{
+        @include make-row();
+        gap: 2rem;
+        div{
+            cursor: default;
+            color: $white;
+            transition: box-shadow .3s;
+            
+            @include make-col-ready();
+
+            @include media-breakpoint-up(sm){
+                @include make-col(1,1);
+            }
+
+            @include media-breakpoint-up(lg){
+                @include make-col(1,3)
+            }
+            
+            &:nth-child(1){
+                border: 1px solid #25cfea;
+                @include media-breakpoint-up(lg){
+                    &:hover{
+                        @include m.bgGradient(#25cfea, #25cfea);
+                        
+                        h3{
+                            color: $white;
+                        }
+                        p{
+                            color: $white
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                border: 1px solid #eac225;
+                @include media-breakpoint-up(lg){
+                    &:hover{
+                        @include m.bgGradient(#eac225, #eac225);
+                        
+                        h3{
+                            color: $white;
+                        }
+                        p{
+                            color: $white
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                border: 1px solid #e12f95;
+                @include media-breakpoint-up(lg){
+                    &:hover{
+                        @include m.bgGradient(#e12f95, #e12f95);
+                        
+                        h3{
+                            color: $white;
+                        }
+                        p{
+                            color: $white
+                        }
+                    }
+                }
+            }
+            &:nth-child(4){
+                border: 1px solid #08c912;
+                @include media-breakpoint-up(lg){
+                    &:hover{
+                        @include m.bgGradient(#08c912, #08c912);
+                        
+                        h3{
+                            color: $white;
+                        }
+                        p{
+                            color: $white
+                        }
+                    }
+                }
+            }
+            @include media-breakpoint-up(lg){
+                &:hover{
+                    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+                }
+            }
+        }
+    }
+    
+    &__heading{
+        @include m.heading;
+    }
+    &__h3{
+        font-size: 2.5rem;
+        &--azul{
+            color: #25cfea;
+        }
+        &--naranja{
+            color: #eac225;
+        }
+        &--morado{
+            color: #e12f95;
+        }
+        &--verde{
+            color: #08c912;
+        }
+    }
+    &__icon{
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,50 @@
+@use '../customs' as *;
+
+@mixin bgImage($url) {
+    background-image: linear-gradient(to right, transparentize($dark, .2) 0%, transparentize($dark, .2) 100%), url($url);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin btnOutline {
+    color: $negro;
+    background-color: $primary;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    transition: all .3s;
+    font-size: 1.8rem;
+    &:hover{
+        background-color: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+@mixin heading{
+    position: relative;
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    width: max-content;
+    color: $secondary;
+    padding-bottom: 1.3rem;
+    &::before{
+        content: '';
+        height: 4px;
+        width: 10rem;
+        background-color: $primary;
+        display: none;
+        @include media-breakpoint-up(md){
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: auto;
+
+        }
+    }
+}
+
+@mixin bgGradient($color1, $color2){
+    background-image: linear-gradient(135deg, $color1 0%, darken($color2, 5%) 100%);
+}

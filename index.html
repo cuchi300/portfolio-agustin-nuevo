@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio Miguel Agustin Baiud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Miguel Agustin Baiud</title>
+    <!-- Prefetch -->
+    <!-- cargar la siguiente pagina que el usuario visite mas rapido -->
+    <!-- con google analytics podemos saber en que pagina las personas pasan mas tiempo y asi colocar prefetch a esa pagina asi carga mas rapido, para sitios web que tengan mas de dos paginas -->
+    <link rel="prefetch" href="ingles.html" as="document">
+    <!-- Preload que hoja de estilo carga con mayor prioridad -->
+    <!-- Bootstrap icons -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="build/img/yo.jpg" as="image">
+    <link rel="preload" href="build/img/guitar-la.png" as="image">
+    <link rel="preload" href="build/img/cafe-pagina.png" as="image">
+    <link rel="preload" href="build/img/muni-web-desktop.png" as="image">
+    <link rel="preload" href="build/img/pagina-sube-desktop.png" as="image">
+    <link rel="preload" href="build/img/techpro-img.png" as="image">
+
+    <!-- Stylesheet -->
+    <link rel="preload" href="build/css/app.min.css" as="style">
+    <link rel="stylesheet" href="build/css/app.min.css">
+</head>
+<body>
+    <header class="header py-4 position-fixed w-100 px-5">
+        <div class="container-xl">
+            <div class="row">
+                <nav class="navegacion navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a href="#hero" class="navbar-brand text-white fw-bold">
+                            <h2 class="navegacion__heading m-0 text-primary fw-bold">MAB</h2>
+                        </a>
+                        <button title="button" class="navbar-toggler" aria-label="Toggle navigation" aria-labelledby="navbarToggle" id="nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navegacion__nav-negro collapse navbar-collapse justify-content-end py-5 py-md-0" id="navbarToggle">
+                            <ul class="navbar-nav navegacion__list text-center">
+                                <li class="nav-item me-0 me-md-5">
+                                    <a href="#hero" class="nav-link">Inicio</a>
+                                </li>
+                                <li class="nav-item me-0 me-md-5">
+                                    <a href="#about" class="nav-link">Acerca de Mi</a>
+                                </li>
+                                <li class="nav-item me-0 me-md-5">
+                                    <a href="#servicios" class="nav-link">Servicios</a>
+                                </li>
+                                <li class="nav-item me-0 me-md-5">
+                                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contacto" class="nav-link">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero px-5" id="hero">
+        <div class="container-xl">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-white hero__contenido">
+                    <h2 class="fw-bold mb-5 hero__heading">Soy Miguel Agustin Baiud</h2>
+                    <h1 class="mb-3 text-secondary hero__parrafo">Desarrollador Web Front End</h1>
+                    <span class="fs-3 pb-3 text-primary fw-bold" id="typed"></span>
+                    <p class="fs-4 pb-3">
+                        <i class="fs-3 bi bi-geo-alt"></i>
+                        <i class="fs-5">Jujuy, Argentina</i>
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="hero__btn btn">Contratame</a>
+                </div>
+                <div class="col-12 col-md-6 hero__picture">
+                    <div class="hero__imagen rounded-circle">
+                        <img class="mx-auto" loading="lazy" width="400" height="300" src="build/img/yo.jpg" alt="imagen mia">
+                    </div>
+                    <svg class="hero__svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#feb633" d="M33.1,-54.2C43.1,-51.6,51.5,-43.1,61.9,-33.1C72.2,-23.1,84.4,-11.5,83.5,-0.5C82.6,10.5,68.6,21,56.6,28.1C44.6,35.2,34.6,38.9,25.5,46C16.4,53,8.2,63.5,-2,66.9C-12.1,70.3,-24.3,66.7,-28.3,56.7C-32.4,46.7,-28.4,30.4,-25.3,19.9C-22.2,9.4,-20.1,4.7,-20.4,-0.2C-20.7,-5.1,-23.5,-10.1,-28.4,-23.9C-33.4,-37.6,-40.5,-60,-36.1,-65.8C-31.7,-71.7,-15.9,-60.8,-2.2,-57.1C11.6,-53.4,23.1,-56.7,33.1,-54.2Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about py-5 px-5 my-5" id="about">
+        <div class="container-xl">
+            <div class="row text-white py-5 my-5">
+                <h2 class="about__heading z-3 pt-5 mb-5 mx-auto">Acerca de Mi</h2>
+                
+                <div class="about__texto text-center col-12 pt-5 mt-5 about__box">
+                    <p class="mb-5 fs-5">Tengo 32 años de edad, <i class="text-primary">descubri el Desarrollo web en 2019</i>, una tarde de trabajo cuando miraba videos en internet. La curiosidad sobre esta profesion desperto al ver un video donde <i class="text-primary">creaban una pagina con puro codigo</i> de computadora. Fue asi que empeze a investigar y encontre <i class="text-primary">cursos de Desarrollo Front End</i>, que por si no tenes conocimiento de lo que significa, se especializa en la parte visual de un sitio web. Lo que estas viendo en este momento.</p>
+                    <p class="mb-5 fs-5">A partir de ahi empeze a estudiar esta profesion que la verdad es dura, pero a medida que fui aprendiendo nuevas tecnologias y ver mis <i class="text-primary">primeros avances en sitios web</i>, mis ganas por seguir aprendiendo fueron creciendo aun mas.</p>
+                    <p class="mb-5 fs-5">Llegue a la instancia de decir que estoy preparado para poder ofrecerte mi conocimientos y poder implementarlos todos para ayudarte a crear un sitio web que se adapte a tus necesidades de negocio y que puedas lograr tu objetivo comercial.</p>
+                    <p class="mb-5 fs-5">Espero con ansias que podamos trabajar juntos.</p>
+                    <div class="d-flex flex-column justify-content-center flex-md-row gap-3 pt-5">
+                        <a href="#proyectos" class="about__btn btn py-3 px-5">Mis Trabajos</a>
+                        <a href="file/CV-Miguel-Agustin-Baiud.pdf" class="about__btn btn py-3 px-5 about__btn--edit" download="CV-Agustin-Baiud">Download CV</a>
+                    </div>
+                </div>
+            </div> <!-- row -->
+
+            <div class="about__skill text-center py-5 my-5 px-5">
+                <div class="row justify-content-center">
+                    <h2 class="about__heading">Mis Habilidades</h2>
+                    <div class="about__grid">
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/html-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/css-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/bootstrap-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/javascript-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/npm-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/sass-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/git-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/gulp-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/tailwind-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                        <div class="about__icon">
+                            <picture>
+                                <img loading="lazy" class="img-fluid w-50 mx-auto" src="build/img/wordpress-icon.svg" width="500" height="300" alt="icono">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicios py-5 px-5" id="servicios">
+        <div class="container-fluid servicios__container">
+            <div class="row py-5 text-center">
+                <div class="col-12">
+                    <h2 class="servicios__heading">Mis servicios</h2>
+                    <p class="py-5 w-75 mx-auto fs-5">Alguno de los servicios que te voy a ofrecer para que tengas la seguridad de que tu pagina va a estar en buenas manos.</p>
+                </div>
+                <div class="row text-white mx-auto justify-content-center servicios__row text-start">
+                    <div class="p-5 rounded-4 servicios__box">
+                        <i class="servicios__icon bi bi-braces "></i>
+                        <h3 class=" servicios__h3 servicios__h3--azul fw-bold pb-4 d-inline-block ps-3">Desarrollo Web</h3>
+                        <p class="fs-6">Me encargo de diseñar tu web con el codigo correcto y rapido para que navegar sea algo placentero y no pierdas publico.</p>
+                    </div>
+                    <div class="p-5 rounded-4 servicios__box">
+                        <i class="servicios__icon bi bi-brush "></i>
+                        <h3 class=" servicios__h3 servicios__h3--naranja fw-bold pb-4 d-inline-block ps-3">Diseño Web</h3>
+                        <p class="fs-6">Un sitio bien diseñado permite que las personas puedan navegar mejor y encontrar lo que estan buscando mucho mas facil. Por eso es importante siempre tener una buena imagen para retener a ese publico visitante.</p>
+                    </div>
+                    <div class="p-5 rounded-4 servicios__box">
+                        <i class="servicios__icon bi bi-phone "></i>
+                        <h3 class=" servicios__h3 servicios__h3--morado fw-bold pb-4 d-inline-block ps-3">Diseño Responsive</h3>
+                        <p class="fs-6">Un sitio web que se adapte a todos los dispositivos tecnologicos ayuda a que tengas mas presencia.</p>
+                    </div>
+                    <div class="p-5 rounded-4 servicios__box">
+                        <i class="servicios__icon bi bi-graph-up "></i>
+                        <h3 class=" servicios__h3 servicios__h3--verde fw-bold pb-4 d-inline-block ps-3">SEO</h3>
+                        <p class="fs-6">Un sitio web bien estructurado ayuda a que tu pagina se indexe correctamente en los servidores de Google y asi te encuentren mucho mas facil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="proyectos py-5" id="proyectos">
+        <div class="container-xl text-center">
+            <h2 class="proyectos__heading mb-5">Mis Proyectos</h2>
+            <p class="pb-5 fs-5">Alguno de los proyectos en los que practico varias de las tecnologias de las que voy adquiriendo conocimiento.</p>
+            <div class="row py-5 my-5s justify-content-center mx-auto g-5">
+                <section class="col-12 col-md-5 col-lg-4">
+                    <div class="card text-start text-white">
+                        <picture>
+                            <source srcset="build/img/pagina-sube-desktop.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/pagina-sube-desktop.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 text-primary">Tarjeta SUBE</h3>
+                            <p class="card-text py-3 fw-light proyectos__parrafo">La tarjeta SUBE la que nos ayuda a transportarnos todos los dias para ir al trabajo, tiene su propia pagina. Teconologias implementadas HTML, CSS, Gulp Js, SASS y JavaScript. </p>
+                            <a href="https://cuchi300.github.io/proyecto-Sube/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
+                            <a href="https://github.com/cuchi300/proyecto-Sube" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                        </div>
+                    </div> <!-- card -->
+                </section>
+                <section class="col-12 col-md-5 col-lg-4">
+                    <div class="card text-start text-white">
+                        <picture>
+                            <source srcset="build/img/cooking-school.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/cooking-school.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 text-primary">Escuela de Cocina</h3>
+                            <p class="card-text py-3 fw-light proyectos__parrafo">Que lindo es comer y mas cuando estas en la escuela de cocina, donde estan los mejores menu. Tecnologias implementadas HTML, CSS, Gulp JS, NPM, SASS.</p>
+                            <a href="https://cuchi300.github.io/cooking-school/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
+                            <a href="https://github.com/cuchi300/cooking-school" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                        </div>
+                    </div> <!-- card -->
+                </section>
+                <section class="col-12 col-md-5 col-lg-4">
+                    <div class="card text-start text-white">
+                        <picture>
+                            <source srcset="build/img/gymfitness-imagen.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/gymfitness-imagen.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 text-primary">GymFitness</h3>
+                            <p class="card-text py-3 fw-light proyectos__parrafo">Ir al gimnasio es bastante satisfactorio, pero en Gymfitness todo es posible cuando entrenas duro. Tecnologias implementadas PHP, JavaScript, HTML y CSS, Wordpress.</p>
+                            <a href="https://diynoso.nyc.dom.my.id/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
+                        </div>
+                    </div> <!-- card -->
+                </section>
+                <section class="col-12 col-md-5 col-lg-4">
+                    <div class="card text-start text-white">
+                        <picture>
+                            <source srcset="build/img/cafe-pagina.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/cafe-pagina.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 text-primary">Cafeteria</h3>
+                            <p class="card-text py-3 fw-light proyectos__parrafo">En esta web, tomarte un cafe es algo de otro mundo y con las imagenes si que te dan ganas de un buen cafe. Teconologias implementadas HTML, CSS, SASS, Gulp Js, NPM y JavaScript.</p>
+                            <a href="https://cuchi300.github.io/cafeteria-sass/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
+                            <a href="https://github.com/cuchi300/cafeteria-sass" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                        </div>
+                    </div> <!-- card -->
+                </section>
+                <section class="col-12 col-md-5 col-lg-4">
+                    <div class="card text-start text-white">
+                        <picture>
+                            <source srcset="build/img/techpro-img.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/techpro-img.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 text-primary">Tech Pro</h3>
+                            <p class="card-text py-3 fw-light proyectos__parrafo">Comprarte unos auriculares para poder escuchar mejor es posible en TechPro, los mejores auriculares para vos. Implementado con HTML, CSS, SASS, NPM, Gulp Js.</p>
+                            <a href="https://cuchi300.github.io/TechPro/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
+                            <a href="https://github.com/cuchi300/TechPro" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                        </div>
+                    </div> <!-- card -->
+                </section>
+                <section class="col-12 col-md-5 col-lg-4">
+                    <div class="card text-start text-white">
+                        <picture>
+                            <source srcset="build/img/guitar-la.webp" type="image/webp">
+                            <img loading="lazy" class="card-img-top proyectos__img" src="build/img/guitar-la.png" width="500" height="300" alt="imagen proyecto">
+                        </picture>
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 text-primary">Guitar LA</h3>
+                            <p class="card-text py-3 fw-light proyectos__parrafo">Compra tu mejor guitarra en GuitarLA, si sos rockero este es tu lugar para poder sacar el mayor provecho. Implementado con HTML, CSS, Bootstrap y JavaScript.</p>
+                            <a href="https://cuchi300.github.io/guitar-bootstrap/" class="proyectos__btn btn d-block p-1 rounded-1 fs-6">Ver Proyecto</a>
+                            <a href="https://github.com/cuchi300/guitar-bootstrap" class="proyectos__btn btn d-block p-1 mt-2 rounded-1 fs-6">Ver Repositorio</a>
+                        </div>
+                    </div> <!-- card -->
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <section class="algo py-5 my-5" id="algo">
+        <div class="container-xl text-center">
+            <h2 class="fs-2 fw-bolder algo__heading">Algun Proyecto en mente?</h2>
+            <div class="row pb-5">
+                    <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="algo__btn btn d-flex align-items-center gap-3 mx-auto d-inline-block w-auto py-2 px-5 mt-5 fs-6 text-uppercase">
+                        <i class="fs-4 bi bi-whatsapp"></i>
+                        <span>Contactame</span>
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto pt-5 mb-5 px-5" id="contacto">
+        <div class="container-xl text-center">
+            <h2 class="contacto__heading mb-5">Contacto</h2>
+            <div class="row text-white text-start">
+                <div class="col-12 col-md-4 my-5 my-md-0">
+                    <h3 class="fs-5 mb-3 text-primary">Info</h3>
+                    <div class="pb-5">
+                        <address class="mb-4 fs-6 fw-normal text-secondary">
+                            <i class="bi bi-geo-alt me-3 fs-5"></i>
+                            Alto Comedero, Jujuy, Argentina.
+                        </address>
+                        <p class="mb-4 fs-6 fw-normal">
+                            <i class="bi bi-envelope-at me-3 fs-5"></i>
+                            <a href="mailto:abaiud55@gmail.com">abaiud55@gmail.com</a>
+                        </p>
+                        <p class="mb-4 fs-6 fw-normal">
+                            <i class="bi bi-telephone me-3 fs-5"></i>
+                            +54 9 11-6217-3874
+                        </p>
+                    </div>
+                    <h3 class="fs-5 text-primary mb-3">Seguime</h3>
+                    <nav class="d-flex gap-4">
+                        <a href="https://api.whatsapp.com/send?phone=1162173874&text=Hola!%20tengo%20un%20proyecto%20web%20en%20mente..." class="fs-5 text-secondary">
+                            <i class="bi bi-whatsapp contacto__link"></i>
+                        </a>
+                        <a href="https://www.instagram.com/agubaiud/" class="fs-5 text-secondary">
+                            <i class="bi bi-instagram contacto__link"></i>
+                        </a>
+                        <a href="https://www.facebook.com/agustin.baiud/" class="fs-5 text-secondary">
+                            <i class="bi bi-facebook contacto__link"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/agustinbaiud/" class="fs-5 text-secondary">
+                            <i class="bi bi-linkedin contacto__link"></i>
+                        </a>
+                        <a href="https://github.com/cuchi300" class="fs-5 text-secondary">
+                            <i class="bi bi-github contacto__link"></i>
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-8 mt-5 mt-md-0">
+                    <!-- FORMULARIO -->
+                    <form class="formulario"  id="formulario">
+                        <div class="mb-5">
+                            <label for="nombre" class="form-label text-uppercase mb-3">Nombre:</label>
+                            <input type="text" name="nombre" class="form-control p-4 border-0" id="nombre" placeholder="Escribí tu nombre...">
+                        </div>
+                        <div class="row mb-5 flex-column flex-md-row">
+                            <div class="col mb-5 mb-md-0">
+                                <label for="email" class="form-label text-uppercase mb-3">Email:</label>
+                                <input type="email" name="email" class="form-control p-4 border-0" id="email" placeholder="Escribí tu email...">
+                            </div>
+                            <div class="col">
+                                <label for="telefono" class="form-label text-uppercase mb-3">Telefono:</label>
+                                <input type="tel" name="telefono" class="form-control p-4 border-0" id="telefono" placeholder="Escribí tu telefono...">
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="mensaje" class="form-label text-uppercase mb-3">Mensaje:</label>
+                            <textarea class="form-control border-0 p-4" name="mensaje" id="mensaje" rows="5" placeholder="De que se trata tu proyecto..."></textarea>
+                        </div>
+                        <div class="col-12" id="botones">
+
+                            <button aria-label="Button submit" type="submit" class="btn formulario__btn opacity-25 py-3 px-6" disabled>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                </svg>
+                                Enviar
+                            </button>
+
+                            <button aria-label="Button submit" type="reset" class="btn formulario__btn py-3 px-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                </svg>
+                                Resetear
+                            </button>
+                        </div><!-- botones -->
+                    </form> <!-- termina formulario -->
+
+                    <div id="spinner" class="text-center visually-hidden d-flex">
+                        <div class="sk-circle">
+                            <div class="sk-circle1 sk-child"></div>
+                            <div class="sk-circle2 sk-child"></div>
+                            <div class="sk-circle3 sk-child"></div>
+                            <div class="sk-circle4 sk-child"></div>
+                            <div class="sk-circle5 sk-child"></div>
+                            <div class="sk-circle6 sk-child"></div>
+                            <div class="sk-circle7 sk-child"></div>
+                            <div class="sk-circle8 sk-child"></div>
+                            <div class="sk-circle9 sk-child"></div>
+                            <div class="sk-circle10 sk-child"></div>
+                            <div class="sk-circle11 sk-child"></div>
+                            <div class="sk-circle12 sk-child"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <footer class="footer pt-5">
+        <div class="container-xl text-center">
+            <div class="row pt-5 align-items-end">
+                <h2 class="footer__heading text-primary mb-3 fw-bold">
+                    <span>MAB.</span>
+                </h2>
+                <p class="fw-normal">Todo el derecho reservado por el diseñador &copy; Miguel Agustin Baiud</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>

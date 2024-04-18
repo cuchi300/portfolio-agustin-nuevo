@@ -1,0 +1,88 @@
+@use '../customs' as *;
+@use '../base/mixins' as m;
+
+.hero{
+    padding: 20rem 0 15rem 0;
+    overflow: hidden;
+    
+    @include media-breakpoint-up(lg){
+        padding-top: 18.5rem;
+    }
+    &__contenido{
+        position: relative;
+        z-index: 8;
+        margin-bottom: 8rem;
+        @include media-breakpoint-up(md){
+            margin-bottom: 0;
+        }
+    }
+    &__heading{
+        font-size: 5rem;
+
+        @include media-breakpoint-up(lg){
+            font-size: 7rem;
+        }
+    }
+    &__parrafo{
+        font-size: 2.3rem;
+    }
+    &__btn{
+        @include m.btnOutline;
+    }
+    
+    &__picture{
+        position: relative;
+        padding-top: 5rem;
+        @include media-breakpoint-up(md){
+            padding-top: 0;
+        }
+    }
+    &__imagen{
+        position: relative;
+        z-index: 3;
+        
+
+        animation-name: moverImagen;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+        
+        @keyframes moverImagen{
+            0%{
+                transform: translateY(2rem);
+            }
+            50%{
+                transform: translateY(-2rem);
+            }
+            100%{
+                transform: translateY(2rem);
+            }
+        }
+
+        img{
+            border-radius: 50%;
+            height: 30rem;
+            width: 30rem;
+            object-fit: cover;
+            object-position: left;
+
+            @include media-breakpoint-up(lg){
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+    }
+    &__svg{
+        position: absolute;
+        z-index: 2;
+        opacity: 0.3;
+        top: -187px;
+        left: -221px;
+        width: 75rem;
+        transform: rotate(-8deg);
+        @include media-breakpoint-up(md){
+            top: -193px;
+            left: -194px;
+        }
+    }
+}

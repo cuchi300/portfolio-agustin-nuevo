@@ -1,0 +1,1 @@
+Hola!! Bueno aca te dejo lo que es mi portfolio personal, te comento un poco de las teconologias que use para realizarlo. Esta echo con Bootstrap, HTML, CSS, y tiene algunos que otros efectos con JavaScript. La idea es implementar tambien PHP y SQL para el formulario. Espero que te guste y nada. Dejale un like al repo!!. Saludos

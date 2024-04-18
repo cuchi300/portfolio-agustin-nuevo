@@ -2,6 +2,7 @@
 @use 'base/mixins' as m;
 
 .algo{
+    padding-block: 15rem ;
     &__heading{
         @include m.heading;
     }

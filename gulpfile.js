@@ -71,4 +71,4 @@ exports.dev = dev;
 exports.imagenAvif = imagenAvif;
 exports.javascript = javascript;
 exports.cssbuild = cssbuild;
-exports.default = series(imagenes, imagenAvif, imagenWebp);
+exports.default = series(css, dev);
